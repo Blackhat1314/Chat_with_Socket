@@ -24,6 +24,7 @@ function sendMessage (message){
 
     // Append MEssage
     appendMessage(msg,'outgoing')
+    scrollToBottom()
     textarea.value = ''
 
     socket.emit('message',msg)
